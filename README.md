@@ -32,6 +32,8 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 | `restic_cron_stderr_file` | null | what file to log restic errors to, null means include in mailto, use /dev/null to discard |
 | `restic_sudo_command_whitelist` | [] | whitelist of commands restic is allowed to run with sudo |
 | `restic_repos` | [] | restic repositories and cron jobs configuration. More in [defaults/main.yml](defaults/main.yml) |
+| `restic_includes_files` | [] | alternative to specifying files/dirs to backup directly in `command` in `restic_repos`. More in [defaults/main.yml](defaults/main.yml) |
+| `restic_excludes_files` | [] | alternative to specifying exclusion patterns directly in `command` in `restic_repos`. More in [defaults/main.yml](defaults/main.yml) |
 
 ## Security
 
